@@ -15,7 +15,7 @@ body{
 
 .flex-container
 {
-   display: flex;
+   display: flex; /*flexbox*/
    background: #fff;
 }
 
@@ -23,19 +23,23 @@ body{
 {
     height: 100px;
     min-width: 100px;
+    /*flex-grow: 1; - growth rate - all box elements are growing the same amount to take all awailable room in the container*/
 }
 
 .one
 {
     background: red;
+    flex-grow: 6;
 }
 
 .two
 {
     background: blue;
+    flex-grow: 2;
 }
 
 .three
 {
     background: green;
+    flex-grow: 4;
 }
