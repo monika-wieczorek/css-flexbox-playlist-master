@@ -15,16 +15,20 @@ body{
 
 .flex-container
 {
-   display: flex; /*flexbox*/
-   background: #fff;
-   /*flex-wrap: wrap; - wrapping a box when the webpage changes its dimensio*/
-   flex-wrap: wrap-reverse; /*it wraps in the opposite direction*/
+    display: flex; /*flexbox*/
+    background: #fff;
+    height: 600px;
+    /*flex-wrap: wrap; - wrapping a box when the webpage changes its dimensio*/
+    flex-wrap: wrap-reverse; /*it wraps in the opposite direction*/
+    flex-flow: row; /*to stack boxes one over another*/
+    align-items: center; /*aplies only to cross axis*/
+    justify-content: center; /*aplies only to main axis*/
 }
 
 .box
 {
     height: 100px;
-    flex: 1 0 200px;
+    flex: 0 0 100px;
     /*flex-basis: 300px; - initial size if the site size decreases the elements on it shrink*/
     /*flex-grow: 1;*/
     /*flex-grow: 1; - growth rate - all box elements are growing the same amount to take all awailable room in the container*/
