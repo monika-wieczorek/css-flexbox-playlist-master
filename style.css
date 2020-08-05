@@ -24,8 +24,9 @@ body{
 .box
 {
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+    flex: 1 0 200px;
+    /*flex-basis: 300px; - initial size if the site size decreases the elements on it shrink*/
+    /*flex-grow: 1;*/
     /*flex-grow: 1; - growth rate - all box elements are growing the same amount to take all awailable room in the container*/
 }
 
